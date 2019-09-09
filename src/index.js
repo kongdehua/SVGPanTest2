@@ -1,1 +1,1 @@
-export * from './main'
+export {default as Foo} from "./foo"

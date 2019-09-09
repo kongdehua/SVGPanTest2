@@ -5,10 +5,10 @@ import uglify from 'rollup-plugin-uglify';
 
 var env = process.env.NODE_ENV
 var config = {
-    input: "src/main.js",
+    input: "src/index.js",
     output: {
         format: "umd",
-        file: "dist/main.js",
+        file: "dist/index.js",
         name: "SVGPanTest"
     },
     plugins: [
