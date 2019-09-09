@@ -17,10 +17,14 @@ var config = {
         }),
         // due to https://github.com/rollup/rollup/wiki/Troubleshooting#name-is-not-exported-by-module
         commonjs({
-            include: 'node_modules/**'
+            include: [
+                'node_modules/**',
+                'node_modules/svgpantest2/**',
+                'node_modules/svgpantest2/src/**',
+            ]
         }),
         babel({
-            exclude: 'node_modules/**'
+            //exclude: 'node_modules/**'
         })
     ]
 }
