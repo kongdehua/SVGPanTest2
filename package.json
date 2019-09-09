@@ -1,0 +1,34 @@
+{
+  "name": "svgpantest2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env BABEL_ENV=es NODE_ENV=development node_modules/.bin/rollup src/main.js --config --sourcemap --output dist/SVGPanTest.js",
+    "build:umd": "cross-env BABEL_ENV=es NODE_ENV=development node_modules/.bin/rollup --config --sourcemap ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongdehua/SVGPanTest2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kongdehua/SVGPanTest2/issues"
+  },
+  "homepage": "https://github.com/kongdehua/SVGPanTest2#readme",
+  "dependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "cross-env": "^5.2.1",
+    "d3-shape": "^1.3.5",
+    "rollup": "^1.21.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.3"
+  }
+}
